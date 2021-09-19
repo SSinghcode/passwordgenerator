@@ -1,9 +1,9 @@
 // Assignment Code
 let generateBtn = document.querySelector("#generate");
-let smallCase = 'abcdefghijklmnopqrstuvwxyz';
-let upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-let numericCase = '0123456789';
-let specialCharacterCase = '@#$%^&*()_+~}{[]=';
+var smallCase = 'abcdefghijklmnopqrstuvwxyz';
+var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var numericCase = '0123456789';
+var specialCharacterCase = '@#$%^&*()_+~}{[]=';
 promptResponseOptionMessage = 'Enter Yes or No. Anything else will be treated as No';
 // Write password to the #password input
 
@@ -39,7 +39,7 @@ function generatePassword() {
   if (validateYesOrNo(openPrompt('Do you want to add numeric character to Password. ' + promptResponseOptionMessage, 'YES'))) {
     finalChar += numericCase;
   }
-  if (validateYesOrNo(openPrompt('Do you want to add spacial character to Password. ' + promptResponseOptionMessage, 'YES'))) {
+  if (validateYesOrNo(openPrompt('Do you want to add special character to Password. ' + promptResponseOptionMessage, 'YES'))) {
     finalChar += specialCharacterCase;
   }
 
