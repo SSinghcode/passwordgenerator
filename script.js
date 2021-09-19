@@ -20,11 +20,39 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-let finalChar = '';
 
-let lengthOfPassword = promptLength();
+function generatePassword() {
+  let finalChar = '';
 
-if (!lengthOfPassword) {
-  alert('Enter a valid length.Please try again');
-  return '';
+  let lengthOfPassword = promptLength();
+
+  if (!lengthOfPassword) {
+    alert('Enter a valid length.Please try again');
+    return '';
+  }
+  if (validateYesOrNo(openPrompt('Do you want to add Lower case to Password. ' + promptResponseOptionMessage, 'YES'))) {
+    finalChar += smallCase;
+  }
+  if (validateYesOrNo(openPrompt('Do you want to add upper case to Password. ' + promptResponseOptionMessage, 'YES'))) {
+    finalChar += upperCase;
+  }
+  if (validateYesOrNo(openPrompt('Do you want to add numeric character to Password. ' + promptResponseOptionMessage, 'YES'))) {
+    finalChar += numericCase;
+  }
+  if (validateYesOrNo(openPrompt('Do you want to add spacial character to Password. ' + promptResponseOptionMessage, 'YES'))) {
+    finalChar += specialCharacterCase;
+  }
+
+  if (finalChar.length) {
+    var password = ''
+    for (var i = 0, n = finalChar.length; i < lengthOfPassword; ++i) {
+      password += finalChar.charAt(Math.floor(Math.random() * n));
+    }
+    return password;
+  } else {
+    alert('You need to select atleast one type to proceed');
+    return '';
+  }
+
+
 }
