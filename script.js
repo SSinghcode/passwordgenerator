@@ -56,3 +56,26 @@ function generatePassword() {
 
 
 }
+function promptLength() {
+  let len = Number(openPrompt('Enter length of Password.Number should be between 8 and 128'));
+  if (len !== NaN && len >= 8 && len <= 128) {
+    return len;
+  } else {
+    return 0;
+  }
+}
+
+function validateYesOrNo(resp) {
+  resp = resp && resp.trim() && resp.toUpperCase();
+  if (resp && (resp === 'Y' || resp === 'YES')) {
+    return true
+  } else {
+    return false;
+  }
+}
+
+
+function openPrompt(title, def = '') {
+  let result = window.prompt(title, def);
+  return result;
+}
