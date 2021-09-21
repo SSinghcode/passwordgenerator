@@ -17,6 +17,7 @@ THEN the password is either displayed in an alert or written to the page
 ```
 git hub link-https://github.com/SSinghcode/passwordgenerator
 deployed application:-https://ssinghcode.github.io/passwordgenerator/
-![alt text](https://github.com/SSinghcode/passwordgenerator/Screenshots/final.jpg?raw=true)
-![alt text](https://github.com/SSinghcode/passwordgenerator/Screenshots/capture.jpg)
-![alt text](https://github.com/SSinghcode/passwordgenerator/Screenshots/Lowercase.jpg)
+![numeric](https://user-images.githubusercontent.com/90226185/134206706-77942262-3352-4435-9b76-bed30b80cd61.JPG)
+![Lowercase](https://user-images.githubusercontent.com/90226185/134206710-e9681854-a408-4b9e-ab1e-d74fb4f49bfb.JPG)
+![final](https://user-images.githubusercontent.com/90226185/134206716-2baa9eff-db13-456b-8c85-042269f92a62.JPG)
+![Capture](https://user-images.githubusercontent.com/90226185/134206725-5bf8b7d5-3c80-4c67-871c-29673f96c901.JPG)
