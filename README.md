@@ -15,7 +15,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
-![Capture](https://user-images.githubusercontent.com/90226185/134217209-6a44c569-3c54-4bdc-b25f-f2f9a8c88514.JPG)
+
 git hub link-https://github.com/SSinghcode/passwordgenerator
 deployed application:-https://ssinghcode.github.io/passwordgenerator/
 
